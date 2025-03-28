@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+rootProject.name = "PosturePro"
+include ':app'
+include ':core:data'
+include ':core:domain' 
+include ':core:ui'
+include ':features:ble'
+include ':features:monitoring'
+include ':features:analytics'
+include ':features:training'
+include ':features:settings'
